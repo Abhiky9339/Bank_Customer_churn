@@ -19,7 +19,7 @@ loan_app = load('Bank_customer_churn.joblib')
 app = Flask(__name__)
 @app.route('/',methods=['POST', 'GET'])
 def home():
-    home_page = '<html><h1>ABC BANK HOME PAGE</h1><body><a href="/application.html">Click here to submit loan application form</a></html>'
+    home_page = '<html><h1>Bank Customer churn PAGE</h1><body><a href="/application.html">Click here to check bank customer churn prediction</a></html>'
     return home_page
 
 if __name__ == '__main__':
